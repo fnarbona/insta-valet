@@ -34,12 +34,36 @@ const App = () => {
   return (
     <NavigationContainer>
       <RootStack.Navigator initialRouteName="Home">
-        <RootStack.Screen name="Home" component={HomeScreen} />
-        <RootStack.Screen name="Cars" component={CarsScreen} />
-        <RootStack.Screen name="History" component={HistoryScreen} />
-        <RootStack.Screen name="Account" component={AccountScreen} />
-        <RootStack.Screen name="Validations" component={ValidationsScreen} />
-        <RootStack.Screen name="Help" component={HelpScreen} />
+        <RootStack.Screen
+          name="Home"
+          component={HomeScreen}
+          options={{headerTitle: 'Insta Valet'}}
+        />
+        <RootStack.Screen
+          name="Cars"
+          component={CarsScreen}
+          options={{headerBackTitle: 'Back'}}
+        />
+        <RootStack.Screen
+          name="History"
+          component={HistoryScreen}
+          options={{headerBackTitle: 'Back'}}
+        />
+        <RootStack.Screen
+          name="Account"
+          component={AccountScreen}
+          options={{headerBackTitle: 'Back'}}
+        />
+        <RootStack.Screen
+          name="Validations"
+          component={ValidationsScreen}
+          options={{headerBackTitle: 'Back'}}
+        />
+        <RootStack.Screen
+          name="Help"
+          component={HelpScreen}
+          options={{headerBackTitle: 'Back'}}
+        />
       </RootStack.Navigator>
     </NavigationContainer>
   );

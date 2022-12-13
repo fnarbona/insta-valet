@@ -16,23 +16,23 @@ const HomeScreen = ({navigation}: HomeScreenProps) => {
         justifyContent={'center'}
         alignItems={'center'}
         mt={10}>
-        <HomeButton
+        <MenuButton
           label={'My Cars'}
           handlePress={() => navigation.navigate('Cars')}
         />
-        <HomeButton
+        <MenuButton
           label={'Parking History'}
           handlePress={() => navigation.navigate('History')}
         />
-        <HomeButton
+        <MenuButton
           label={'My Account'}
           handlePress={() => navigation.navigate('Account')}
         />
-        <HomeButton
+        <MenuButton
           label={'Validations'}
           handlePress={() => navigation.navigate('Validations')}
         />
-        <HomeButton
+        <MenuButton
           label={'Help'}
           handlePress={() => navigation.navigate('Help')}
         />
@@ -41,7 +41,7 @@ const HomeScreen = ({navigation}: HomeScreenProps) => {
   );
 };
 
-const HomeButton = ({
+const MenuButton = ({
   handlePress,
   label,
 }: {
@@ -53,7 +53,7 @@ const HomeButton = ({
       h={'80px'}
       w={'80%'}
       borderRadius={12}
-      bg={'blue.600'}
+      colorScheme={'blue'}
       onPress={handlePress}>
       <Text fontSize={'xl'} color={'white'}>
         {label}
